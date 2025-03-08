@@ -36,9 +36,11 @@ const HomePage = () => {
 
                 {/* Website Description Section */}
                 <section className="mb-10">
-                    <h1 className="text-4xl font-semibold text-center mb-4">Welcome to Show and Tell</h1>
+                    <h1 className="text-4xl font-semibold text-center mb-4">
+                        Welcome to Hoarders
+                    </h1>
                     <p className="text-lg text-center text-gray-700">
-                        Show and Tell is a platform where you can share your collections and discover amazing things
+                        Hoarders is a platform where you can share your collections and discover amazing things
                         from others.
                         Explore our recent collections and get inspired by what people are sharing.
                     </p>
