@@ -4,18 +4,18 @@ import {Link} from "react-router";
 const HomePage = () => {
     // Dummy data for images (Instagram-like posts)
     const images = [
-        "https://via.placeholder.com/400x400?text=Image+1",
-        "https://via.placeholder.com/400x400?text=Image+2",
-        "https://via.placeholder.com/400x400?text=Image+3",
-        "https://via.placeholder.com/400x400?text=Image+4",
-        "https://via.placeholder.com/400x400?text=Image+5",
-        "https://via.placeholder.com/400x400?text=Image+6",
-        "https://via.placeholder.com/400x400?text=Image+7",
-        "https://via.placeholder.com/400x400?text=Image+8",
-        "https://via.placeholder.com/400x400?text=Image+9",
-        "https://via.placeholder.com/400x400?text=Image+10",
-        "https://via.placeholder.com/400x400?text=Image+11",
-        "https://via.placeholder.com/400x400?text=Image+12",
+        "src/images/demon-slayer.webp",
+        "src/images/download.jpg",
+        "src/images/go-jo-model.jpg",
+        "src/images/pokemon-card-2.webp",
+        "src/images/pokemon-card.jpg",
+        "src/images/il_570xN.4371318603_pmin.webp",
+        "src/images/stuff.jpg",
+        "src/images/Definitive-and-Commemorativ.png",
+        "src/images/jellycat-1.jpg",
+        "src/images/jellycat-2.webp",
+        "src/images/jellycat-amuseable-pain-au-chocolat.jpg",
+        "src/images/amusesandcastle.webp",
     ];
 
     return (
