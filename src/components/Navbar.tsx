@@ -1,5 +1,6 @@
 import {FormEvent, useState} from "react";
 import {Link} from "react-router";
+import shelf from "../assets/shelf.svg";
 
 function Navbar() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -26,7 +27,7 @@ function Navbar() {
                 <div className="container mx-auto flex justify-between items-center">
                     <Link to="/">
                         <div className="flex items-center space-x-3">
-                            <img src="/src/assets/shelf.svg" alt="Logo" style={{height: "50px", width: "50px"}}/>
+                            <img src={shelf} alt="Logo" style={{height: "50px", width: "50px"}}/>
                             <span className="text-xl font-semibold text-white">
                                 Hoarders
                             </span>
