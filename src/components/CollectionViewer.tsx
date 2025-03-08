@@ -22,7 +22,7 @@ function CollectionViewer() {
         <div className="bg-base-100 h-screen">
             <Navbar/>
             <div className="h-full flex items-center justify-center">
-                <div className="card bg-base-200 shadow-lg">
+                <div className="card min-w-1/3 bg-base-200 shadow-lg">
                     <div className="card-body">
                         <div className="flex justify-between mb-8">
                             <div className="card-title text-3xl">
