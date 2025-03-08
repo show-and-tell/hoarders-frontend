@@ -1,21 +1,31 @@
+import demonSlayer from "../assets/demon-slayer.webp";
+import download from "../assets/download.jpg";
+import goJoModel from "../assets/go-jo-model.jpg";
+import pokemonCard from "../assets/pokemon-card.jpg";
+import pokemonCard2 from "../assets/pokemon-card-2.webp";
+import stuff from "../assets/stuff.jpg";
+import definitiveAndCommemorativ from "../assets/Definitive-and-Commemorativ.png";
+import jellycat1 from "../assets/jellycat-1.jpg";
+import jellycat2 from "../assets/jellycat-2.webp";
+import jellycatAmuseablePainAuChocolat from "../assets/jellycat-amuseable-pain-au-chocolat.jpg";
+import amuseSandcastle from "../assets/amusesandcastle.webp";
 import NavBar from "./Navbar.tsx"
 import {Link} from "react-router";
 
 const HomePage = () => {
     // Dummy data for images (Instagram-like posts)
     const images = [
-        "src/assets/demon-slayer.webp",
-        "src/assets/download.jpg",
-        "src/assets/go-jo-model.jpg",
-        "src/assets/pokemon-card-2.webp",
-        "src/assets/pokemon-card.jpg",
-        "src/assets/il_570xN.4371318603_pmin.webp",
-        "src/assets/stuff.jpg",
-        "src/assets/Definitive-and-Commemorativ.png",
-        "src/assets/jellycat-1.jpg",
-        "src/assets/jellycat-2.webp",
-        "src/assets/jellycat-amuseable-pain-au-chocolat.jpg",
-        "src/assets/amusesandcastle.webp",
+        demonSlayer,
+        download,
+        goJoModel,
+        pokemonCard,
+        pokemonCard2,
+        stuff,
+        definitiveAndCommemorativ,
+        jellycat1,
+        jellycat2,
+        jellycatAmuseablePainAuChocolat,
+        amuseSandcastle,
     ];
 
     return (
