@@ -19,37 +19,43 @@ function App() {
     }
 
     return (
-        <div className="rounded-2xl bg-blue-500 p-6">
-            <div className="flex justify-between mb-8">
-                <div className="flex items-center justify-center text-3xl">
-                    Collection
-                </div>
-                <div className="flex items-center justify-center">
-                    <label
-                        className="rounded-2xl bg-gray-700 transition duration-200 hover:bg-gray-800 p-3"
-                        htmlFor="files"
-                    >
-                        Select Image
-                    </label>
-                    <input
-                        className="hidden"
-                        id="files"
-                        type="file"
-                        accept="image/*"
-                        multiple
-                        onChange={handleFileChange}
-                    />
-                </div>
-            </div>
-            <div className="grid grid-cols-4 gap-6">
-                {images.map((image, index) =>
-                    <div
-                        className="flex items-center justify-center transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
-                        key={index}
-                    >
-                        <img src={image} alt="image"/>
+        <div className="bg-base-100">
+            <div className="card bg-base-200 shadow-lg">
+                <div className="card-body">
+                    <div className="flex justify-between mb-8">
+                        <div className="card-title text-3xl">
+                            Collection
+                        </div>
+                        <label
+                            className="btn bg-primary"
+                            htmlFor="files"
+                        >
+                            Select Image
+                        </label>
+                        <input
+                            className="hidden"
+                            id="files"
+                            type="file"
+                            accept="image/*"
+                            multiple
+                            onChange={handleFileChange}
+                        />
                     </div>
-                )}
+                    <div className="grid grid-cols-4 gap-6">
+                        {images.map((image, index) =>
+                            <div
+                                className="flex items-center justify-center transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+                                key={index}
+                            >
+                                <img
+                                    className="rounded-2xl"
+                                    src={image}
+                                    alt="image"
+                                />
+                            </div>
+                        )}
+                    </div>
+                </div>
             </div>
         </div>
     )
