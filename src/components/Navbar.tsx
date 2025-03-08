@@ -22,7 +22,7 @@ function Navbar() {
 
     return (
         <>
-            <nav className="bg-blue-600 text-white p-4 shadow-md w-full">
+            <nav className="bg-blue-600 text-white p-4 shadow-md w-full mb-8">
                 <div className="container mx-auto flex justify-between items-center">
                     <Link to="/">
                         <div className="flex items-center space-x-3">
