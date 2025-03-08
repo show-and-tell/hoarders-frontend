@@ -21,7 +21,7 @@ const HomePage = () => {
     return (
         <div className="flex flex-col items-center justify-start">
             <NavBar/>
-            <div className="container mx-auto w-full mt-8">
+            <div className="container mx-auto w-full">
 
 
                 {/* Website Description Section */}
