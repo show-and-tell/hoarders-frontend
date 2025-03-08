@@ -15,17 +15,17 @@ import {Link} from "react-router";
 const HomePage = () => {
     // Dummy data for images (Instagram-like posts)
     const images = [
-        demonSlayer,
-        download,
-        goJoModel,
-        pokemonCard,
-        pokemonCard2,
-        stuff,
-        definitiveAndCommemorativ,
-        jellycat1,
-        jellycat2,
-        jellycatAmuseablePainAuChocolat,
-        amuseSandcastle,
+        {src: demonSlayer, collection: "Anime Model"},
+        {src: download, collection: "Anime Model"},
+        {src: goJoModel, collection: "Anime Model"},
+        {src: pokemonCard, collection: "Pokemon cards"},
+        {src: pokemonCard2,collection: "Pokemon cards"},
+        {src: stuff, collection: "Toys"},
+        {src: definitiveAndCommemorativ, collection: "Stamps"},
+        {src: jellycat1, collection: "JellyCat"},
+        {src: jellycat2, collection: "JellyCat"},
+        {src: jellycatAmuseablePainAuChocolat, collection: "JellyCat"},
+        {src: amuseSandcastle, collection: "JellyCat"}, 
     ];
 
     return (
@@ -81,13 +81,23 @@ const HomePage = () => {
                     <div
                         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-h-screen overflow-y-auto p-4">
                         {images.map((image, index) => (
-                            <div key={index}
-                                 className="flex-none w-full h-72 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
-                                <img src={image} alt={`Post ${index + 1}`} className="w-full h-full object-cover"/>
+                            <div
+                                key={index}
+                                className="group relative flex-none w-full h-72 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+                                <img
+                                    src={image.src}
+                                    alt={`Post ${index + 1}`}
+                                    className="w-full h-full object-cover"
+                                />
+                                {/* Overlay with collection name */}
+                                <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-40 transition-opacity duration-300 z-10">
+                                    <span className="text-white text-xl font-semibold">{image.collection}</span>
+                                </div>
                             </div>
                         ))}
                     </div>
                 </section>
+
 
             </div>
         </div>
