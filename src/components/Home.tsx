@@ -39,15 +39,26 @@ const HomePage = () => {
                     <h2 className="text-3xl font-semibold mb-4">Recent Collections</h2>
                     <div className="flex justify-center items-center gap-4">
                         <div className="border p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
-                            <h3 className="text-xl font-semibold">Collection 1</h3>
-                            <p className="text-sm text-gray-600">Description of collection 1.</p>
-                            <Link to="/collection" className="text-blue-600 hover:underline mt-2 block">Explore
-                                Collection</Link>
+                            <h3 className="text-xl font-semibold">
+                                Cats
+                            </h3>
+                            <p className="text-sm text-gray-600">
+                                Cats collection.
+                            </p>
+                            <Link to="/collection1" className="text-blue-600 hover:underline mt-2 block">
+                                Explore Cats
+                            </Link>
                         </div>
                         <div className="border p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
-                            <h3 className="text-xl font-semibold">Collection 2</h3>
-                            <p className="text-sm text-gray-600">Description of collection 2.</p>
-                            <a href="#" className="text-blue-600 hover:underline mt-2 block">Explore Collection</a>
+                            <h3 className="text-xl font-semibold">
+                                Dogs
+                            </h3>
+                            <p className="text-sm text-gray-600">
+                                Dogs collection.
+                            </p>
+                            <Link to="/collection2" className="text-blue-600 hover:underline mt-2 block">
+                                Explore Dogs
+                            </Link>
                         </div>
                     </div>
                 </section>

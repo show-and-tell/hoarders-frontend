@@ -1,14 +1,12 @@
 import {ChangeEvent, useState} from 'react';
-import cat1 from "../assets/cat1.jpg";
-import cat2 from "../assets/cat2.jpg";
-import cat3 from "../assets/cat3.jpg";
-import cat4 from "../assets/cat4.jpg";
-import cat5 from "../assets/cat5.jpg";
 import Navbar from "./Navbar.tsx";
 
-function CollectionViewer() {
-    const initialImages = [cat1, cat2, cat3, cat4, cat5]
-    const [images, setImages] = useState(initialImages)
+export interface CollectionProps {
+    images: string[];
+}
+
+function CollectionViewer(props: CollectionProps) {
+    const [images, setImages] = useState(props.images)
 
     function handleFileChange(event: ChangeEvent<HTMLInputElement>) {
         const files = event.target.files
